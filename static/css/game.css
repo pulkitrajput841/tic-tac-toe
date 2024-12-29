@@ -1,0 +1,138 @@
+/* game.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.game-link {
+    margin-bottom: 20px;
+}
+
+.game-link div {
+    font-size: 14px;
+    color: #555555;
+}
+
+.copy-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.game-url {
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #666666;
+    word-break: break-word;
+}
+
+.copy-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+#status {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #333333;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eaeaea;
+    border: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #dcdcdc;
+}
+
+.cell.disabled {
+    pointer-events: none;
+    background-color: #f4f4f4;
+}
+
+#winnerDisplay {
+    font-size: 18px;
+    color: #28a745;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#restartButton {
+    display: none;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#restartButton:hover {
+    background-color: #218838;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+    z-index: 1000;
+}
